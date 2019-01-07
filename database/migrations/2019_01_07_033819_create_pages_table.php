@@ -19,6 +19,34 @@ class CreatePagesTable extends Migration
             $table->string('slug');
             $table->timestamps();
         });
+
+        //Insert some stuff
+        DB::table('pages')->insert(array(
+            array(
+                'name' => 'Documentation',
+                'slug' => 'https://laravel.com/docs'
+            ),
+            array(
+                'name' => 'Laracasts',
+                'slug' => 'https://laravel.com/docs'
+            ),
+            array(
+                'name' => 'News',
+                'slug' => 'https://laravel.com/docs'
+            ),
+            array(
+                'name' => 'Nova',
+                'slug' => 'https://laravel.com/docs'
+            ),
+            array(
+                'name' => 'Forge',
+                'slug' => 'https://laravel.com/docs'
+            ),
+            array(
+                'name' => 'Github',
+                'slug' => 'https://github.com/laravel/laravel'
+            ))
+        );
     }
 
     /**

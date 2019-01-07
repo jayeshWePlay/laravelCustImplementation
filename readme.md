@@ -26,7 +26,7 @@ Use following instructions to set up the project.
 1. Clone / Download the repository
 2. Go to the root directory of project and run "composer install"
 3. Create database with the name "custImp" (You can change database name and set your preferred name in .env file)
-4. Run "php artisan migrate" to set up the database
+4. Run "php artisan migrate" to set up the database. (Pages table will be populated with some data to fetch for service provider.)
 5. Run "php artisan serve" to start the project.
 
 Some more details :
